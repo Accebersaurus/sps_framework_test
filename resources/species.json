@@ -1,12 +1,12 @@
 {
     "species": {
-        "species1": [],
-        "species2": []
+        "Human": [],
+        "Cathar": []
     },
     "ran_weights": [1, 1],
     "in_weights": {
-        "species1": [1, 1],
-        "species2": [1, 1]
+        "Human": [1, 0],
+        "Cathar": [0, 1]
     },
     "comment": [
         "look at the official documentation for a list of all species tags.",
