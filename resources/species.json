@@ -1,12 +1,24 @@
 {
     "species": {
         "Human": [],
-        "Cathar": []
+        "Cathar": [],
+        "Twilek": [],
+        "Zabrak": [],
+        "Togruta": [],
+        "Nautolan": [],
+        "Kaleesh": [],
+        "Mirialan": []
     },
-    "ran_weights": [1, 1],
+    "ran_weights": [8, 8, 5, 3, 3, 3, 2, 3],
     "in_weights": {
-        "Human": [1, 0],
-        "Cathar": [0, 1]
+        "Human": [1, 0, 0, 0, 0, 0, 0, 0],
+        "Cathar": [0, 1, 0, 0, 0, 0, 0, 0],
+        "Twilek": [0, 0, 1, 0, 0, 0, 0, 0],
+        "Zabrak": [0, 0, 0, 1, 0, 0, 0, 0],
+        "Togruta": [0, 0, 0, 0, 1, 0, 0, 0],
+        "Nautolan": [0, 0, 0, 0, 0, 1, 0, 0],
+        "Kaleesh": [0, 0, 0, 0, 0, 0, 1, 0],
+        "Mirialan": [0, 0, 0, 0, 0, 0, 0, 1]
     },
     "comment": [
         "look at the official documentation for a list of all species tags.",
