@@ -486,6 +486,9 @@ class RoleScreen(Screens):
                      f"the Clan. Rather, mediators are charged with handling disagreements between " \
                      f"Clanmates and disputes between Clans. Some mediators train as apprentices to serve their Clan, " \
                      f"while others may choose to become mediators later in life. "
+        elif self.the_cat.status == "jedi":
+            output = f"{self.the_cat.name} is a <b>jedi</b>. Jedi are keepers of peace and justice in the galaxy. " \
+                    f"They are dedicated to the light side of the force."
         elif self.the_cat.status == "elder":
             output = f"{self.the_cat.name} is an <b>elder</b>. They have spent many moons serving their Clan, " \
                      f"and have earned " \
@@ -589,6 +592,8 @@ class RoleScreen(Screens):
         del self.switch_med_cat
         self.switch_mediator.kill()
         del self.switch_mediator
+        self.switch_jedi.kill()
+        del self.switch_jedi
         self.retire.kill()
         del self.retire
         self.switch_med_app.kill()
