@@ -209,6 +209,7 @@ class Clan:
                     "apprentice",
                     "mediator apprentice",
                     "medicine cat apprentice",
+                    "jedi apprentice"
                     "warrior",
                     "medicine cat",
                     "leader",
