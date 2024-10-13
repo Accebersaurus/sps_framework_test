@@ -74,6 +74,7 @@ class Cat:
         "elder",
         "apprentice",
         "warrior",
+        "jedi apprentice",
         "jedi",
         "mediator apprentice",
         "mediator",
@@ -959,6 +960,9 @@ class Cat:
             pass
 
         elif self.status == "jedi":
+            pass
+
+        elif self.status == "jedi apprentice":
             pass
 
         # update class dictionary
@@ -2340,6 +2344,11 @@ class Cat:
         if (
             self.status == "mediator apprentice"
             and potential_mentor.status != "mediator"
+        ):
+            return False
+        if (
+            self.status == "jedi apprentice"
+            and potential_mentor.status != "jedi"
         ):
             return False
 
