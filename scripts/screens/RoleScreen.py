@@ -62,6 +62,9 @@ class RoleScreen(Screens):
             elif event.ui_element == self.switch_mediator:
                 self.the_cat.status_change("mediator", resort=True)
                 self.update_selected_cat()
+            elif event.ui_element == self.switch_jedi:
+                self.the_cat.status_change("jedi", resort=True)
+                self.update_selected_cat()
             elif event.ui_element == self.switch_warrior_app:
                 self.the_cat.status_change("apprentice", resort=True)
                 self.update_selected_cat()
