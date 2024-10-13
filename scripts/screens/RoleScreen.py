@@ -131,6 +131,9 @@ class RoleScreen(Screens):
         self.switch_mediator = UIImageButton(scale(pygame.Rect((805, 824), (344, 72))), "",
                                              object_id="#switch_mediator_button",
                                              manager=MANAGER)
+        self.switch_jedi = UIImageButton(scale(pygame.Rect((805, 896),(344, 72))), "",
+                                         object_id="#switch_jedi_button",
+                                         manager=MANAGER)
 
         # In-TRAINING ROLES:
         self.switch_warrior_app = UIImageButton(scale(pygame.Rect((1159, 720), (344, 104))), "",
