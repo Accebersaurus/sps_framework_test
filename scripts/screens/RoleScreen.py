@@ -269,6 +269,7 @@ class RoleScreen(Screens):
             self.switch_warrior.disable()
             self.switch_med_cat.disable()
             self.switch_mediator.disable()
+            self.switch_jedi.disable()
             self.retire.disable()
 
             # In-TRAINING ROLES:
@@ -291,6 +292,7 @@ class RoleScreen(Screens):
             self.switch_warrior.disable()
             self.switch_med_cat.enable()
             self.switch_mediator.enable()
+            self.switch_jedi.enable()
             self.retire.enable()
 
             # In-TRAINING ROLES:
@@ -309,6 +311,7 @@ class RoleScreen(Screens):
             self.switch_warrior.enable()
             self.switch_med_cat.disable()
             self.switch_mediator.disable()
+            self.switch_jedi.disable()
             self.retire.enable()
 
             # In-TRAINING ROLES:
@@ -322,6 +325,7 @@ class RoleScreen(Screens):
             self.switch_warrior.enable()
             self.switch_med_cat.disable()
             self.switch_mediator.enable()
+            self.switch_jedi.enable()
             self.retire.enable()
 
             # In-TRAINING ROLES:
@@ -342,9 +346,28 @@ class RoleScreen(Screens):
             self.switch_warrior.enable()
             self.switch_med_cat.enable()
             self.switch_mediator.disable()
+            self.switch_jedi.enable()
             self.retire.enable()
 
             # In-TRAINING ROLES:
+            self.switch_med_app.disable()
+            self.switch_warrior_app.disable()
+            self.switch_mediator_app.disable()
+        elif self.the_cat.status == "jedi":
+            if leader_invalid:
+                self.promote_leader.enable()
+            else:
+                self.promote_leader.disable()
+            if deputy_invalid:
+                self.promote_deputy.enable()
+            else:
+                self.promote_deputy.disable()
+            self.switch_warrior.enable()
+            self.switch_med_cat.enable()
+            self.switch_mediator.enable()
+            self.switch_jedi.disable()
+            self.retire.enable()
+            # In TRAINING ROLES:
             self.switch_med_app.disable()
             self.switch_warrior_app.disable()
             self.switch_mediator_app.disable()
@@ -363,6 +386,7 @@ class RoleScreen(Screens):
             self.switch_warrior.enable()
             self.switch_med_cat.enable()
             self.switch_mediator.enable()
+            self.switch_jedi.enable()
             self.retire.disable()
 
             # In-TRAINING ROLES:
@@ -377,6 +401,7 @@ class RoleScreen(Screens):
             self.switch_warrior.disable()
             self.switch_med_cat.disable()
             self.switch_mediator.disable()
+            self.switch_jedi.disable()
             self.retire.disable()
 
             # In-TRAINING ROLES:
@@ -391,6 +416,7 @@ class RoleScreen(Screens):
             self.switch_warrior.disable()
             self.switch_med_cat.disable()
             self.switch_mediator.disable()
+            self.switch_jedi.disable()
             self.retire.disable()
 
             # In-TRAINING ROLES:
@@ -405,6 +431,7 @@ class RoleScreen(Screens):
             self.switch_warrior.enable()
             self.switch_med_cat.disable()
             self.switch_mediator.disable()
+            self.switch_jedi.disable()
             self.retire.enable()
 
             # In-TRAINING ROLES:
@@ -419,6 +446,7 @@ class RoleScreen(Screens):
             self.switch_warrior.disable()
             self.switch_med_cat.disable()
             self.switch_mediator.disable()
+            self.switch_jedi.disable()
             self.retire.disable()
 
             # In-TRAINING ROLES:
