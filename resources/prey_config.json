@@ -25,6 +25,7 @@
         "medicine cat apprentice": 1.5,
         "mediator apprentice": 1.5,
         "mediator": 2,
+        "jedi": 2,
         "warrior": 3,
         "apprentice": 1.5,
         "elder": 1.5,
@@ -43,6 +44,7 @@
         "mediator apprentice",
         "warrior",
         "mediator",
+        "jedi",
         "deputy",
         "leader"
     ],

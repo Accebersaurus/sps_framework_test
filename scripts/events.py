@@ -90,6 +90,7 @@ class Events:
                 "apprentice",
                 "mediator",
                 "mediator apprentice",
+                "jedi",
             }
             and not cat.dead
             and not cat.outside

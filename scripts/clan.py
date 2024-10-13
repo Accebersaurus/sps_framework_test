@@ -51,6 +51,7 @@ class Clan:
         "leader",
         "elder",
         "mediator",
+        "jedi",
         "general",
     ]
 
@@ -212,6 +213,7 @@ class Clan:
                     "medicine cat",
                     "leader",
                     "mediator",
+                    "jedi",
                     "deputy",
                     "elder",
                 ]
