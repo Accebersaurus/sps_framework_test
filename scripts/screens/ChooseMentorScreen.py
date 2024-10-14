@@ -630,6 +630,9 @@ class ChooseMentorScreen(Screens):
         potential_mediator_mentors = [cat for cat in Cat.all_cats_list if not (cat.dead or cat.outside) and cat.status == 'mediator']
         valid_mediator_mentors = []
         invalid_mediator_mentors = []
+        potential_jedi_mentors = [cat for cat in Cat.all_cats_list if not (cat.dead or cat.outside) and cat.status == "jedi"]
+        valid_jedi_mentors = []
+        invalid_jedi_mentors = []
 
         if self.the_cat.status == "apprentice":
             for cat in potential_warrior_mentors:
@@ -691,6 +694,16 @@ class ChooseMentorScreen(Screens):
                     valid_mediator_mentors.append(cat)
 
             return potential_mediator_mentors
+        elif self.the_cat.status == "jedi apprentice":
+            for cat in potential_jedi_mentors:
+                is_valid = True
+                if self.show_only_no_former_app_mentors and cat.former_apprentices:
+                    is_valid = False
+                if self.show_only_no_current_app_mentors and cat.apprentice:
+                    is_valid = False
+                if is_valid:
+                    valid_jedi_mentors.append(cat)
+            return potential_jedi_mentors
         return []
 
     def on_use(self):
