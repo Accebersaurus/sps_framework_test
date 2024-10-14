@@ -135,7 +135,7 @@ class Patrol:
         for cat in patrol_cats:
             self.patrol_cats.append(cat)
 
-            if cat.status == "apprentice" or cat.status == "medicine cat apprentice":
+            if cat.status == "apprentice" or cat.status == "medicine cat apprentice" or cat.status == "jedi apprentice":
                 self.patrol_apprentices.append(cat)
 
             self.patrol_status_list.append(cat.status)
@@ -152,7 +152,7 @@ class Patrol:
                 else:
                     self.patrol_statuses["healer cats"] = 1
 
-            if cat.status in ("apprentice", "medicine cat apprentice"):
+            if cat.status in ("apprentice", "medicine cat apprentice", "jedi apprentice"):
                 if "all apprentices" in self.patrol_statuses:
                     self.patrol_statuses["all apprentices"] += 1
                 else:
