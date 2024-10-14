@@ -91,6 +91,7 @@ class Events:
                 "mediator",
                 "mediator apprentice",
                 "jedi",
+                "jedi apprentice",
             }
             and not cat.dead
             and not cat.outside
@@ -1005,6 +1006,7 @@ class Events:
                 "apprentice",
                 "medicine cat apprentice",
                 "mediator apprentice",
+                "jedi apprentice",
                 "kitten",
                 "newborn",
             ]:
@@ -1013,6 +1015,8 @@ class Events:
                         self.ceremony(x, "medicine cat")
                     elif x.status == "mediator apprentice":
                         self.ceremony(x, "mediator")
+                    elif x.status== "jedi apprentice":
+                        self.ceremony(x, "jedi")
                     else:
                         self.ceremony(x, "warrior")
                 elif (
@@ -1021,6 +1025,7 @@ class Events:
                         "apprentice",
                         "medicine cat apprentice",
                         "mediator apprentice",
+                        "jedi apprentice",
                     ]
                     and x.moons >= 6
                 ):
@@ -1559,6 +1564,7 @@ class Events:
                 "apprentice",
                 "mediator apprentice",
                 "medicine cat apprentice",
+                "jedi apprentice",
             ]:
 
                 if game.clan.clan_settings["12_moon_graduation"]:
@@ -1595,6 +1601,10 @@ class Events:
 
                     elif cat.status == "mediator apprentice":
                         self.ceremony(cat, "mediator", preparedness)
+                        self.ceremony_accessory = True
+                        self.gain_accessories(cat)
+                    elif cat.status == "jedi apprentice":
+                        self.ceremony(cat, "jedi", preparedness)
                         self.ceremony_accessory = True
                         self.gain_accessories(cat)
 
@@ -1644,6 +1654,7 @@ class Events:
             "medicine cat": ["medicine cat"],
             "warrior": ["warrior", "deputy", "leader", "elder"],
             "mediator": ["mediator"],
+            "jedi": ["jedi"]
         }
 
         try:
@@ -1651,7 +1662,7 @@ class Events:
             possible_ceremonies.update(self.ceremony_id_by_tag[promoted_to])
 
             # Get ones for prepared status ----------------------------------------------
-            if promoted_to in ["warrior", "medicine cat", "mediator"]:
+            if promoted_to in ["warrior", "medicine cat", "mediator", "jedi"]:
                 possible_ceremonies = possible_ceremonies.intersection(
                     self.ceremony_id_by_tag[preparedness]
                 )
