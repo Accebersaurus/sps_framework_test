@@ -74,6 +74,9 @@ class RoleScreen(Screens):
             elif event.ui_element == self.switch_mediator_app:
                 self.the_cat.status_change("mediator apprentice", resort=True)
                 self.update_selected_cat()
+            elif event.ui_element == self.switch_jedi_app:
+                self.the_cat.status_change("jedi apprentice", resort=True)
+                self.update_selected_cat()
         
         elif event.type == pygame.KEYDOWN and game.settings['keybinds']:
             if event.key == pygame.K_ESCAPE:
@@ -145,6 +148,9 @@ class RoleScreen(Screens):
         self.switch_mediator_app = UIImageButton(scale(pygame.Rect((1159, 928), (344, 104))), "",
                                                  object_id="#switch_mediator_app_button",
                                                  manager=MANAGER)
+        self.switch_jedi_app = UIImageButton(scale(pygame.Rect((1159, 1032), (344, 104))), "",
+                                             object_id="#switch_jedi_app_button",
+                                             manager=MANAGER)
 
         self.update_selected_cat()
 
