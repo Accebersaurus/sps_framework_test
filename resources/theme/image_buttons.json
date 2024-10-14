@@ -214,6 +214,23 @@
             }
         }
     },
+    "#switch_jedi_app_button": {
+        "prototype": "#image_button",
+        "images": {
+            "normal_image": {
+                "path": "resources/images/buttons/switch_jedi_app.png"
+            },
+            "hovered_image": {
+                "path": "resources/images/buttons/switch_jedi_app_hover.png"
+            },
+            "selected_image": {
+                "path": "resources/images/buttons/switch_jedi_app_hover.png"
+            },
+            "disabled_image": {
+                "path": "resources/images/buttons/switch_jedi_app_unavailable.png"
+            }
+        }
+    },
     "#manage_roles_button": {
         "prototype": "#image_button",
         "images": {
