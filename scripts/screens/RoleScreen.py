@@ -222,6 +222,7 @@ class RoleScreen(Screens):
             "mediator": "mediator_icon.png",
             "mediator apprentice": "mediator_app_icon.png",
             "jedi": "jedi_icon.png",
+            "jedi apprentice": "jedi_app_icon.png",
             "warrior": "warrior_icon.png",
             "apprentice": "warrior_app_icon.png",
             "kitten": "kit_icon.png",
