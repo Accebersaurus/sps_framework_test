@@ -2,10 +2,10 @@
     {
         "id": "gen_jedi_apprentice",
         "thoughts": [
-            "Is enjoying learning about mediating",
-            "Is learning how to deal with argumentative Clanmates",
-            "Is learning how to gently guide a cat into accepting a truth they don't like",
-            "Wishes {PRONOUN/m_c/subject} had learned to mediate arguments sooner",
+            "Is enjoying learning about the force",
+            "Is learning the ins and outs of jedi mind tricks",
+            "Is learning how to avoid violence",
+            "Wishes {PRONOUN/m_c/subject} had learned to use the force sooner",
             "Wants {PRONOUN/m_c/poss} training to be completed already",
             "Is learning guided breathing techniques",
             "Is learning how to help others see the bigger picture",
@@ -18,9 +18,9 @@
     {
         "id": "jedi_app_alive_jedi_app",
         "thoughts": [
-            "Had an argument with another mediator apprentice",
-            "Doesn't agree with r_c's style of mediation",
-            "Is planning a group mediation session with r_c and some troubling cats"
+            "Had an argument with another jedi apprentice",
+            "Doesn't agree with r_c's lightsaber style",
+            "Is planning a group meditation session with r_c"
         ],
         "random_status_constraint": [
             "jedi_apprentice"
@@ -33,10 +33,10 @@
         "id": "jedi_app_alive_jedi",
         "thoughts": [
             "Is amazed at how well r_c mediated a fight between Clanmates",
-            "Is amazed at how well r_c mediated a territory dispute",
+            "Is amazed at how well r_c ended a violent dispute",
             "Is amazed at how r_c talked {PRONOUN/r_c/poss} way out of a potential war",
             "Is asking r_c the best way to calm down an angry cat",
-            "Is asking r_c about new ways to work through problems",
+            "Is asking r_c about ancient force uses",
             "Is following in r_c's pawsteps"
         ],
         "random_status_constraint": [
@@ -67,8 +67,8 @@
     {
         "id": "righteous_jedi_apprentice",
         "thoughts": [
-            "Was scolded for taking sides in mediating arguments recently",
-            "Is being reminded to be neutral in mediation",
+            "Was scolded for taking sides in missons recently",
+            "Is being reminded to be neutral in conflict",
             "Is having trouble remaining neutral when one cat is clearly in the wrong",
             "Is struggling between doing the right thing and keeping a secret",
             "Thinks that doing the right thing is more important than staying completely neutral"
@@ -81,7 +81,7 @@
         "id": "vengeful_jedi_apprentice",
         "thoughts": [
             "Takes the opposite side of a cat that was rude to {PRONOUN/m_c/object}",
-            "Considers letting an argument continue after being so rudely blown off"
+            "Considers using the force as an advantage"
         ],
         "main_trait_constraint": [
             "vengeful"
