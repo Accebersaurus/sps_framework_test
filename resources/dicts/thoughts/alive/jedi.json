@@ -3,7 +3,8 @@
         "id": "jedi_to_dead_jedi",
         "thoughts": [
             "Wishes {PRONOUN/m_c/subject} could ask r_c for advice",
-            "Wonders how r_c would have handled c_n's most recent conflict"
+            "Wonders how r_c would have handled c_n's most recent conflict",
+            "There is no death, only the force, still {PRONOUN/m_c/subject} miss r_c"
         ],
         "random_status_constraint": [
             "jedi"
@@ -15,9 +16,9 @@
     {
         "id": "jedi_to_alive_jedi",
         "thoughts": [
-            "Is discussing conflict resolution strategies with r_c",
-            "Thinks r_c may have worsened a c_n argument",
-            "Thinks r_c did a great job resolving a conflict"
+            "Is discussing battle strategies with r_c",
+            "Wants to meditate with r_c",
+            "Thinks r_c did a great job the other day"
         ],
         "random_status_constraint": [
             "jedi",
@@ -63,39 +64,40 @@
         "thoughts": [
             "Is feeling a sense of pride after mediating a difficult argument",
             "Wishes {PRONOUN/m_c/poss} Clanmates would just talk to each other",
-            "Is upset by a recent negotiation with a rival Clan",
+            "Is disturbed by a recent development with a rival Clan",
             "Negotiates a herb trade with another Clan",
             "Is negotiating with a kittypet to make use of the herbs in their Twoleg garden",
             "Is dismayed at how quickly {PRONOUN/m_c/poss} Clanmates get into arguments",
             "Feels exhausted after mediating so many arguments",
-            "Feels pride for {PRONOUN/m_c/poss} work",
-            "Is mediating a couple's relationship",
-            "Is mediating a long time friendship between two Clanmates",
-            "Is feeling frustrated after a failed negotiation",
-            "Is feeling exhausted from resolving petty arguments",
+            "Feels the force",
+            "There is no emotion, there is peace",
+            "There is no passion, there is serenity",
+            "There is no chaos, there is harmony",
+            "There is no ignorance, there is knowledge",
             "Wants to solve a dispute with another Clan",
-            "Wonders if mediating is meant to be so draining",
-            "Wonders if being a warrior would have been more fun",
-            "Is proud of how well {PRONOUN/m_c/subject} {VERB/m_c/are/is} doing as a mediator",
-            "Accidentally made an argument worse",
-            "Is proud of getting through a difficult mediation session",
-            "Feels exhausted from {PRONOUN/m_c/poss} Clanmates' bickering",
+            "Wonders what life would be like if they were not a Jedi",
+            "Practices lightsaber fighting",
+            "Is proud of how well {PRONOUN/m_c/subject} {VERB/m_c/are/is} doing as a Jedi",
+            "Accidentally mind tricked a clanmate",
+            "Meditates peacefully",
+            "Feels the shadow of the dark side",
             "Is listening to both sides of an argument",
-            "Is feeling a bit underappreciated for {PRONOUN/m_c/poss} mediation",
-            "Is wondering if {PRONOUN/m_c/subject} made the right decision to become a mediator",
-            "Is relieved {PRONOUN/m_c/subject} broke up an argument before it started",
+            "Is so deep in meditation {PRONOUN/m_c/subject} rise into the air",
+            "Looks to the force for answers",
+            "Jumps off a high place",
             "Is hoping the Clan can stay peaceful",
             "Is contemplating teaching the Clan communication skills",
             "Is mediating a small disagreement between two Clanmates",
-            "Wonders if c_n considers {PRONOUN/m_c/object} a good mediator"
+            "Wonders what the force has in store for them."
         ]
     },
     {
         "id": "bloodthirsty_jedi",
         "thoughts": [
-            "Is wondering if {PRONOUN/m_c/subject} should sabotage a relationship that is going a bit too well",
-            "Wishes to break up a sickeningly lovey-dovey couple",
-            "Chuckles to {PRONOUN/m_c/self} after sabotaging another relationship"
+            "Is wondering if the dark side is really sooo bad",
+            "Wishes for a battle to break out",
+            "Is curious about the Sith",
+            "Takes a training session too far"
         ],
         "main_trait_constraint": [
             "bloodthirsty"
@@ -105,7 +107,7 @@
         "id": "cold_jedi",
         "thoughts": [
             "Is judging two Clanmates for their foolish argument",
-            "Wishes to break up a sickeningly lovey-dovey couple",
+            "It is the will of the force, now leave {PRONOUN/m_c/subject} alone!",
             "Is sitting back and watching an argument take place"
         ],
         "main_trait_constraint": [
@@ -115,7 +117,7 @@
     {
         "id": "compassionate_jedi",
         "thoughts": [
-            "Feels bad for a parent who can't seem to get along with their child",
+            "Senses a disturbance in the force",
             "Wonders why everyone can't just get along"
         ],
         "main_trait_constraint": [
@@ -135,7 +137,7 @@
     {
         "id": "insecure_jedi",
         "thoughts": [
-            "Finds mediating emotionally draining",
+            "Finds meditating emotionally draining",
             "Is worried {PRONOUN/m_c/subject} may have made things worse"
         ],
         "main_trait_constraint": [
@@ -155,7 +157,7 @@
     {
         "id": "nervous_jedi",
         "thoughts": [
-            "Finds mediating emotionally draining",
+            "Can't release their emotions",
             "Is feeling worried with all the high tension lately"
         ],
         "main_trait_constraint": [
@@ -165,7 +167,7 @@
     {
         "id": "righteous_jedi",
         "thoughts": [
-            "Is greatly annoyed by a Clanmate's inability to accept they were in the wrong"
+            "Doesn't understand why the Jedi Code shouldn't apply to all"
         ],
         "main_trait_constraint": [
             "righteous"
@@ -174,7 +176,7 @@
     {
         "id": "troublesome_jedi",
         "thoughts": [
-            "Is looking for a pair to sabotage, out of boredom",
+            "Is looking for trouble, out of boredom",
             "Solves problems by starting them"
         ],
         "main_trait_constraint": [
@@ -184,8 +186,7 @@
     {
         "id": "vengeful_jedi",
         "thoughts": [
-            "Is wondering if {PRONOUN/m_c/subject} should sabotage a relationship that is going a bit too well",
-            "Wishes to break up a sickeningly lovey-dovey couple",
+            "Wishes vengence was the Jedi way",
             "Is sitting back and watching an argument take place"
         ],
         "main_trait_constraint": [
